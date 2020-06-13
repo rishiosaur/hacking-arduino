@@ -25,6 +25,10 @@ void loop()
 
   int buttonState = digitalRead(BUTTON);
 
+  if (potState != gameNum) {
+    gameNum = potState;
+    Serial.println(gameNum);
+  }
   if (buttonState == HIGH) {
     ++state;
   } 

@@ -13,7 +13,7 @@
 void setup()
 {
   Serial.begin(9600);
-  // initialize LED digital pin as an output.
+  
   pinMode(BUTTON, INPUT);
 }
 

@@ -23,6 +23,8 @@ int gameNum = 0;
 void loop()
 {
 
+  int potState = analogRead(A0);
+
   int buttonState = digitalRead(BUTTON);
 
   if (potState != gameNum) {

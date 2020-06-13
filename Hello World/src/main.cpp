@@ -19,6 +19,7 @@ void setup()
 
 int state = 0;
 
+int gameNum = 0;
 void loop()
 {
 

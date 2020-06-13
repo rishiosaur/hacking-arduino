@@ -12,6 +12,7 @@
 
 void setup()
 {
+  // Initialize 
   Serial.begin(9600);
   
   pinMode(BUTTON, INPUT);
@@ -20,6 +21,7 @@ void setup()
 int state = 0;
 
 int gameNum = 0;
+
 void loop()
 {
 
@@ -31,7 +33,9 @@ void loop()
     gameNum = potState;
     Serial.println(gameNum);
   }
+
   if (buttonState == HIGH) {
+    // Update the state by adding one
     ++state;
     Serial.println(state);
   }

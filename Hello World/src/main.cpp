@@ -33,9 +33,9 @@ void loop()
   }
   if (buttonState == HIGH) {
     ++state;
-  } 
+    Serial.println(state);
+  }
 
-  Serial.println(state);
-
+  // Delays are for stability
   delay(1);
 }
